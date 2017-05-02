@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: apiway-api
+  labels:
+    name: apiway-api-controller
+spec:
+  replicas: 2
+  selector:
+    name: apiway-api
+  template:
+    metadata:
+      labels:
+        name: apiway-api
+    spec:
+      containers:
+      - image: 539277938309.dkr.ecr.us-west-2.amazonaws.com/apiway-api:0.0.1
+        name: apiway-api
+        ports:
+        - containerPort: 3000
+          name: http-server

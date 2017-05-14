@@ -51,6 +51,12 @@ mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo:27017/dbname_?
 kubectl exec -it {Pod Name} sh
 ```
 
+### Exposing mongodb service
+```sh
+kubectl expose service mongo --type=LoadBalancer --name=mongo-service
+```
+
+
 
 ### References
 #### Running MongoDB on Kubernetes with StatefulSets

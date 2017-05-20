@@ -57,7 +57,6 @@ kubectl expose service mongo --type=LoadBalancer --name=mongo-service
 ```
 
 
-
 ### References
 #### Running MongoDB on Kubernetes with StatefulSets
 - http://blog.kubernetes.io/2017/01/running-mongodb-on-kubernetes-with-statefulsets.html

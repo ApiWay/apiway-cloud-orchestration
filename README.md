@@ -1,4 +1,4 @@
-![ApiWay CLI](https://github.com/ApiWay/apiway-cli/blob/master/docs/img/apiway-cli.gif)
+![logo](https://github.com/ApiWay/apiway-design/blob/master/img/logo.png)
 
 # ApiWay: Container Orchestration using Kubernetes
 Automating deployment, scaling, and management of containerized applications for apiway.io

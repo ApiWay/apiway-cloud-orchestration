@@ -92,5 +92,7 @@ kubectl expose service mongo --type=LoadBalancer --name=mongo-service
 ##### Javascript
 * [apiway-sdk-js](https://github.com/ApiWay/apiway-sdk-js)
 * [npm: apiway.js](https://www.npmjs.com/package/apiway.js)
+#### Job
+* [apiway-job](https://github.com/ApiWay/apiway-job)
 #### Design
 * [apiway-design](https://github.com/ApiWay/apiway-design)

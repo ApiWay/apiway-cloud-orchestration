@@ -14,7 +14,6 @@ Automating deployment, scaling, and management of containerized applications for
 ### Setup environment values
 ```sh
 export NAME=tower.apiway.io
-0
 export KOPS_STATE_STORE=s3://tower-apiway-io-state-store
 export KOPS_STATE_S3_ACL=bucket-owner-full-control
 export AWS_SECRET_ACCESS_KEY=xxxxx

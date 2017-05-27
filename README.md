@@ -1,7 +1,20 @@
+![ApiWay CLI](https://github.com/ApiWay/apiway-cli/blob/master/docs/img/apiway-cli.gif)
+
+# ApiWay: Container Orchestration using Kubernetes
+Automating deployment, scaling, and management of containerized applications for apiway.io
+
+### Main Feature
+* Auto scaling
+* Load balancing & Service discovery
+* Self-healing
+* Automated rollouts and rollbacks
+* Storage orchestration
+
 ## Prerequisite
 ### Setup environment values
 ```sh
 export NAME=tower.apiway.io
+0
 export KOPS_STATE_STORE=s3://tower-apiway-io-state-store
 export KOPS_STATE_S3_ACL=bucket-owner-full-control
 export AWS_SECRET_ACCESS_KEY=xxxxx

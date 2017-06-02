@@ -67,7 +67,21 @@ kubectl exec -it {Pod Name} sh
 ```sh
 kubectl expose service mongo --type=LoadBalancer --name=mongo-service
 ```
-
+### Creating apiway-pubsub service
+```sh
+kubectl create -f apiway-pubsub-service.yaml
+```
+### Creating apiway-pubsub deployment
+```sh
+kubectl create -f apiway-pubsub-deployment.yaml
+```
+### Creating apiway-smtp service
+```sh
+kubectl create -f apiway-smtp-service.yaml
+```
+### Creating apiway-smtp deployment
+```sh
+kubectl create -f apiway-smtp-deployment.yaml
 
 ### References
 #### Running MongoDB on Kubernetes with StatefulSets

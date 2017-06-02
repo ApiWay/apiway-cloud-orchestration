@@ -1,0 +1,35 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: apiway-smtp
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        role: apiway-smtp
+        name: apiway-smtp
+    spec:
+      containers:
+      - image: 539277938309.dkr.ecr.us-west-2.amazonaws.com/apiway-smtp:latest
+        imagePullPolicy: Always
+        name: apiway-smtp
+        env:
+        - name  : DOMAIN
+          value : bluehack.net
+        - name  : HOSTNAME
+          value : bluehack.net
+        - name  : MESSAGE_SIZE_LIMIT
+          value : "50000000"
+        - name  : RELAYHOST
+          value : "[smtp.gmail.com]:587"
+        ports:
+        - name: smtp
+          containerPort: 25
+          protocol: TCP
+        - name: smtp-ssl
+          containerPort: 465
+          protocol: TCP
+        - name: smtp-starttls
+          containerPort: 587
+          protocol: TCP

@@ -82,6 +82,15 @@ kubectl create -f apiway-smtp-service.yaml
 ### Creating apiway-smtp deployment
 ```sh
 kubectl create -f apiway-smtp-deployment.yaml
+```
+### Creating apiway-notification service
+```sh
+kubectl create -f apiway-notification-service.yaml
+```
+### Creating apiway-notification deployment
+```sh
+kubectl create -f apiway-notification-deployment.yaml
+```
 
 ### References
 #### Running MongoDB on Kubernetes with StatefulSets
@@ -108,5 +117,11 @@ kubectl create -f apiway-smtp-deployment.yaml
 * [npm: apiway.js](https://www.npmjs.com/package/apiway.js)
 #### Job
 * [apiway-job](https://github.com/ApiWay/apiway-job)
+#### PubSub
+* [apiway-pubsub](https://github.com/ApiWay/apiway-pubsub)
+#### Notification
+* [apiway-notification](https://github.com/ApiWay/apiway-notification)
+#### SMTP
+* [apiway-smtp](https://github.com/ApiWay/apiway-smtp)
 #### Design
 * [apiway-design](https://github.com/ApiWay/apiway-design)

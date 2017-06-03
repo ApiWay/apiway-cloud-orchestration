@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: apiway-notification
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        role: apiway-notification
+        name: apiway-notification
+    spec:
+      containers:
+      - image: 539277938309.dkr.ecr.us-west-2.amazonaws.com/apiway-notification:latest
+        name: apiway-notification
+        ports:
+        - containerPort: 1883

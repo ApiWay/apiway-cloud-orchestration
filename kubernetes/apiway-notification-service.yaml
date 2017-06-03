@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apiway-notification
+  labels:
+    name: apiway-notification
+    kubernetes.io/name: "apiway-notification"
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 1883
+      targetPort: 1883
+      protocol: TCP
+  selector:
+    role: apiway-notification

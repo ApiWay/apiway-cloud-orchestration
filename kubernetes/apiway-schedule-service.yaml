@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apiway-schedule
+  labels:
+    name: apiway-schedule
+    kubernetes.io/name: "apiway-schedule"
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 1883
+      targetPort: 1883
+      protocol: TCP
+  selector:
+    role: apiway-schedule

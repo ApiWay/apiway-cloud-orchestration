@@ -91,6 +91,14 @@ kubectl create -f apiway-notification-service.yaml
 ```sh
 kubectl create -f apiway-notification-deployment.yaml
 ```
+### Creating apiway-schedule service
+```sh
+kubectl create -f apiway-schedule-service.yaml
+```
+### Creating apiway-schedule deployment
+```sh
+kubectl create -f apiway-schedule-deployment.yaml
+```
 
 ### References
 #### Running MongoDB on Kubernetes with StatefulSets
@@ -121,6 +129,8 @@ kubectl create -f apiway-notification-deployment.yaml
 * [apiway-pubsub](https://github.com/ApiWay/apiway-pubsub)
 #### Notification
 * [apiway-notification](https://github.com/ApiWay/apiway-notification)
+#### Schedule
+* [apiway-schedule](https://github.com/ApiWay/apiway-schedule)
 #### SMTP
 * [apiway-smtp](https://github.com/ApiWay/apiway-smtp)
 #### Design

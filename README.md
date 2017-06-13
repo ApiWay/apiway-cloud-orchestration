@@ -99,6 +99,18 @@ kubectl create -f apiway-schedule-service.yaml
 ```sh
 kubectl create -f apiway-schedule-deployment.yaml
 ```
+### Creating mongo-schedule service
+```sh
+kubectl create -f mongo-schedule-service.yaml
+```
+### Creating mongo-schedule statefulset
+```sh
+kubectl create -f mongo-schedule-statefulset.yaml
+```
+### Exposing mongo-schedule service
+```sh
+kubectl expose service mongo-schedule --type=LoadBalancer --name=mongo-schedule-service
+```
 
 ### References
 #### Running MongoDB on Kubernetes with StatefulSets

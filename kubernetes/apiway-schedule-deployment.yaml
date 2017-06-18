@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: apiway-schedule
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        role: apiway-schedule
+        name: apiway-schedule
+    spec:
+      containers:
+      - image: 539277938309.dkr.ecr.us-west-2.amazonaws.com/apiway-schedule:latest
+        name: apiway-schedule
+        ports:
+        - containerPort: 1883

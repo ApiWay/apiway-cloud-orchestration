@@ -112,6 +112,14 @@ kubectl create -f mongo-schedule-statefulset.yaml
 kubectl expose service mongo-schedule --type=LoadBalancer --name=mongo-schedule-service
 ```
 
+### Redis
+```sh
+# Start the Redis master pod
+kubectl create -f redis-master.yaml
+# Start the Redis master's service
+kubectl create -f redis-master-service.yaml
+```
+
 ### References
 #### Running MongoDB on Kubernetes with StatefulSets
 - http://blog.kubernetes.io/2017/01/running-mongodb-on-kubernetes-with-statefulsets.html

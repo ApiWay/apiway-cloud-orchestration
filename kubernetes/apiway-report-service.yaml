@@ -4,12 +4,11 @@ metadata:
   name: apiway-report
   labels:
     name: apiway-report
-    kubernetes.io/name: "apiway-report"
 spec:
   type: LoadBalancer
   ports:
-    - port: 1883
-      targetPort: 1883
+    - port: 3000
+      targetPort: 3000
       protocol: TCP
   selector:
     role: apiway-report

@@ -11,7 +11,7 @@ spec:
         name: apiway-report
     spec:
       containers:
-      - image: 539277938309.dkr.ecr.us-west-2.amazonaws.com/apiway-notification:latest
+      - image: 539277938309.dkr.ecr.us-west-2.amazonaws.com/apiway-report:latest
         name: apiway-report
         ports:
-        - containerPort: 1883
+        - containerPort: 3000
